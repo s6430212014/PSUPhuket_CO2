@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลต้นไม้</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .zone {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #e9f7ef;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ข้อมูลต้นไม้ในแต่ละโซน</h1>
+    </header>
+    <div class="container">
+        <h2>รายการต้นไม้แบ่งตามโซน</h2>
+        <div class="zone">
+            <h3>โซนที่ 1</h3>
+            <p>จำนวนต้นไม้: 50 ต้น</p>
+        </div>
+        <div class="zone">
+            <h3>โซนที่ 2</h3>
+            <p>จำนวนต้นไม้: 30 ต้น</p>
+        </div>
+        <div class="zone">
+            <h3>โซนที่ 3</h3>
+            <p>จำนวนต้นไม้: 70 ต้น</p>
+        </div>
+        <div class="zone">
+            <h3>โซนที่ 4</h3>
+            <p>จำนวนต้นไม้: 40 ต้น</p>
+        </div>
+        <div class="zone">
+            <h3>โซนที่ 5</h3>
+            <p>จำนวนต้นไม้: 20 ต้น</p>
+        </div>
+        <div class="zone">
+            <h3>โซนที่ 6</h3>
+            <p>จำนวนต้นไม้: 60 ต้น</p>
+        </div>
+        <div class="zone">
+            <h3>โซนที่ 7</h3>
+            <p>จำนวนต้นไม้: 25 ต้น</p>
+        </div>
+        <div class="zone">
+            <h3>โซนที่ 8</h3>
+            <p>จำนวนต้นไม้: 35 ต้น</p>
+        </div>
+        <div class="zone">
+            <h3>โซนที่ 9</h3>
+            <p>จำนวนต้นไม้: 45 ต้น</p>
+        </div>
+        <div class="zone">
+            <h3>โซนที่ 10</h3>
+            <p>จำนวนต้นไม้: 55 ต้น</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตภูเก็ต</p>
+    </footer>
+</body>
+</html>
