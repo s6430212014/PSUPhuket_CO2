@@ -298,9 +298,9 @@
 
         <script>
             function searchTable() {
-                const input = document.getElementById("searchInputZone2");
+                const input = document.getElementById(inputID);
                 const filter = input.value.toUpperCase();
-                const table = document.getElementById("dataTableZone2");
+                const table = document.getElementById(tableID);
                 const rows = table.getElementsByTagName("tr");
 
                 for (let i = 1; i < rows.length; i++) {
