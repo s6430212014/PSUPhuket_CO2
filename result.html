@@ -75,9 +75,9 @@
     <div class="container">
         <h2>โซนที่ 1: ลานจอดรถหน้าคณะเทคโนโลยีและสิ่งแวดล้อม</h2>
         <h3>Searchable Table</h1>
-       <input type="text" id="searchInputZone1" placeholder="Search in table..." onkeyup="searchTable('searchInputZone1', 'dataTableZone1')">
+       <input type="text" id="searchInput" placeholder="Search in table..." onkeyup="searchTable()">
 
-        <table id="dataTableZone1">
+        <table id="dataTable">
             <thead>
                 <tr>
                     <th>ชื่อต้นไม้ (ภาษาไทย)</th>
@@ -163,9 +163,9 @@
 
         <script>
             function searchTable() {
-                const input = document.getElementById("searchInputZone1");
+                const input = document.getElementById("searchInput");
                 const filter = input.value.toUpperCase();
-                const table = document.getElementById("dataTableZone1");
+                const table = document.getElementById("dataTable");
                 const rows = table.getElementsByTagName("tr");
 
                 for (let i = 1; i < rows.length; i++) {
