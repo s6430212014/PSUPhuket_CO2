@@ -189,10 +189,234 @@
 </html>
 
         <h2>โซนที่ 2: บริเวณสนามฟุตบอลและพื้นที่ตลาดนัด มอ.บ้านซ่าน</h2>
-        <img src="picture/Zone2_Result.jpg" alt="โซนที่ 2" style="width:70%; border-radius: 8px; margin-top: 20px; margin-left: auto; margin-right: auto; display: block;">
+        <h3>Searchable Table</h1>
+        <input type="text" id="searchInput" placeholder="Search in table..." onkeyup="searchTable()">
 
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>ชื่อต้นไม้ (ภาษาไทย)</th>
+                    <th>ประเภทต้นไม้</th>
+                    <th>จำนวนต้นไม้</th>
+                    <th>การกักเก็บคาร์บอน (ตันคาร์บอน/เฮกตาร์)</th>
+                    <th>การดูดซับ Co2 (ตันคาร์บอนไดออกไซด์)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ศรีตรัง</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>80</td>
+                    <th>2292.62</th>
+                    <th>8390.98</th>
+                </tr>
+                <tr>
+            <tbody>
+                <tr>
+                    <td>ยางนา</td>
+                    <td>ป่าดิบแล้ง</td>
+                    <td>5</td>
+                    <th>783.53</th>
+                    <th>2867.7</th>
+                </tr>
+                <tr>                    
+            <tbody>
+                <tr>
+                    <td>หางนกยูงฝรั่ง</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>3</td>
+                    <th>371.91</th>
+                    <th>1361.2</th>
+                </tr>
+                <tr>
+            <tbody>
+                <tr>
+                    <td>เหลืองอินเดีย</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>2</td>
+                    <th>31.26</th>
+                    <th>114.4</th>
+                </tr>
+                <tr>
+            <tbody>
+                <tr>
+                    <td>ประดู่แดง</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>1</td>
+                    <th>26.96</th>
+                    <th>98.68</th>
+                </tr>
+                <tr>
+            <tbody>
+                <tr>
+                    <td>เสลา</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>1</td>
+                    <th>114.18</th>
+                    <th>417.9</th>
+                </tr>
+                <tr>
+            <tbody>
+                <tr>
+                    <td>กระถินเทพา</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>1</td>
+                    <th>533.72</th>
+                    <th>1953.4</th>
+                </tr>
+                <tr>
+              <tbody>
+                <tr>
+                    <td>อินทนิล</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>1</td>
+                    <th>13.85</th>
+                    <th>50.69</th>
+                </tr>
+                <tr>
+             <tbody>
+                <tr>
+                    <td>ตะแบก</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>1</td>
+                    <th>19.65</th>
+                    <th>71.92</th>
+                </tr>
+                <tr>
+              <tbody>
+                <tr>
+                    <td>พิกุล</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>1</td>
+                    <th>110.11</th>
+                    <th>403.01</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <script>
+            function searchTable() {
+                const input = document.getElementById("searchInput");
+                const filter = input.value.toUpperCase();
+                const table = document.getElementById("dataTable");
+                const rows = table.getElementsByTagName("tr");
+
+                for (let i = 1; i < rows.length; i++) {
+                    const cells = rows[i].getElementsByTagName("td");
+                    let match = false;
+
+                for (let j = 0; j < cells.length; j++) {
+                    if (cells[j]) {
+                        const textValue = cells[j].textContent || cells[j].innerText;
+                        if (textValue.toUpperCase().indexOf(filter) > -1) {
+                            match = true;
+                            break;
+                        }
+                    }
+                }
+                rows[i].style.display = match ? "" : "none";
+            }
+        }
+    </script>
+</body>
+</html>                 
+                    
         <h2>โซนที่ 3: พื้นที่รอบตึกสนามกีฬาและสนามเทนนิส</h2>
-        <img src="picture/Zone3_Result.jpg" alt="โซนที่ 3" style="width:70%; border-radius: 8px; margin-top: 20px; margin-left: auto; margin-right: auto; display: block;">
+        <h3>Searchable Table</h1>
+        <input type="text" id="searchInput" placeholder="Search in table..." onkeyup="searchTable()">
+
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>ชื่อต้นไม้ (ภาษาไทย)</th>
+                    <th>ประเภทต้นไม้</th>
+                    <th>จำนวนต้นไม้</th>
+                    <th>การกักเก็บคาร์บอน (ตันคาร์บอน/เฮกตาร์)</th>
+                    <th>การดูดซับ Co2 (ตันคาร์บอนไดออกไซด์)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ศรีตรัง</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>37</td>
+                    <th>902.22</th>
+                    <th>3302.11</th>
+                </tr>
+                <tr>
+             <tbody>
+                <tr>
+                    <td>ประดู่บ้าน</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>20</td>
+                    <th>1168.52</th>
+                    <th>4276.78</th>
+                </tr>
+                <tr>
+             <tbody>
+                <tr>
+                    <td>เสลา</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>10</td>
+                    <th>379.8</th>
+                    <th>1390.07</th>
+                </tr>                 
+                <tr>
+             <tbody>
+                <tr>
+                    <td>หางนกยูงฝรั่ง</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>3</td>
+                    <th>613.03</th>
+                    <th>2243.68</th>
+                </tr>
+                <tr>
+             <tbody>
+                <tr>
+                    <td>ปีบ</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>3</td>
+                    <th>138.93</th>
+                    <th>508.5</th>
+                </tr>
+                <tr>
+             <tbody>
+                <tr>
+                    <td>ตะแบก</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>3</td>
+                    <th>273.16</th>
+                    <th>999.76</th>
+                </tr>        
+            </tbody>
+        </table>
+
+        <script>
+            function searchTable() {
+                const input = document.getElementById("searchInput");
+                const filter = input.value.toUpperCase();
+                const table = document.getElementById("dataTable");
+                const rows = table.getElementsByTagName("tr");
+
+                for (let i = 1; i < rows.length; i++) {
+                    const cells = rows[i].getElementsByTagName("td");
+                    let match = false;
+
+                for (let j = 0; j < cells.length; j++) {
+                    if (cells[j]) {
+                        const textValue = cells[j].textContent || cells[j].innerText;
+                        if (textValue.toUpperCase().indexOf(filter) > -1) {
+                            match = true;
+                            break;
+                        }
+                    }
+                }
+                rows[i].style.display = match ? "" : "none";
+            }
+        }
+    </script>
+</body>
+</html>                                  
 
         <h2>โซนที่ 4: ตึกคณะเทคโนโลยีและสิ่งแวดล้อม, ตึกวิทยาลัยการคอมพิวเตอร์, และสำนักงานอธิการบดี</h2>
         <img src="picture/Zone4_Result.jpg" alt="โซนที่ 4" style="width:70%; border-radius: 8px; margin-top: 20px; margin-left: auto; margin-right: auto; display: block;">
