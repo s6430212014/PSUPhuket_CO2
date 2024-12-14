@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ผลลัพธ์การกักเก็บคาร์บอน</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .navigation-links {
+            text-align: center; /* จัดให้อยู่ตรงกลาง */
+            margin-top: 20px;
+        }
+
+        .navigation-links a {
+            display: inline-block; /* ทำให้ลิงก์เรียงแนวนอน */
+            color: #007bff;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 8px 15px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            margin: 0 10px; /* เพิ่มระยะห่างระหว่างลิงก์ */
+        }
+
+        .navigation-links a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-link a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ผลลัพธ์การกักเก็บคาร์บอน</h1>
+    </header>
+    <div class="container">
+    <div class="container">
+        <h2>โซนที่ 5: ตึกคณะวิเทศศึกษา และห้องสมุด</h2>
+        <h3>Searchable Table</h1>
+        <input type="text" id="searchInput" placeholder="Search in table..." onkeyup="searchTable()">
+
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>ชื่อต้นไม้ (ภาษาไทย)</th>
+                    <th>ประเภทต้นไม้</th>
+                    <th>จำนวนต้นไม้</th>
+                    <th>การกักเก็บคาร์บอน (ตันคาร์บอน/เฮกตาร์)</th>
+                    <th>การดูดซับ Co2 (ตันคาร์บอนไดออกไซด์)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ศรีตรัง</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>49</td>
+                    <th>3314.15</th>
+                    <th>12129.8</th>
+                </tr>
+                <tr>
+             <tbody>
+                <tr>
+                    <td>อินทนิล</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>40</td>
+                    <th>3267.33</th>
+                    <th>11958.43</th>
+                </tr>
+                <tr>
+             <tbody>
+                <tr>
+                    <td>จามจุรี</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>13</td>
+                    <th>15966.99</th>
+                    <th>58439.19</th>
+                </tr>                 
+                <tr>
+             <tbody>
+                <tr>
+                    <td>ลูกปืนใหญ่</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>10</td>
+                    <th>838.94</th>
+                    <th>3070.54</th>
+                </tr>
+                <tr>
+             <tbody>
+                <tr>
+                    <td>ปีบ</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>6</td>
+                    <th>931</th>
+                    <th>3407.44</th>
+                </tr>
+                <tr>
+             <tbody>
+                <tr>
+                    <td>ประดู่บ้าน</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>3</td>
+                    <th>216.48</th>
+                    <th>792.31</th>
+                </tr>
+             <tbody>
+                <tr>
+                    <td>หว้า</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>3</td>
+                    <th>120.73</th>
+                    <th>441.89</th>
+                </tr>        
+               <tbody>
+                <tr>
+                    <td>มะฮอกกานีใบใหญ่</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>3</td>
+                    <th>431.57</th>
+                    <th>1579.54</th>
+                </tr>      
+             <tbody>
+                <tr>
+                    <td>มะม่วง</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>2</td>
+                    <th>159.32</th>
+                    <th>583.12</th>
+                </tr>      
+             <tbody>
+                <tr>
+                    <td>จำปี</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>2</td>
+                    <th>811.55</th>
+                    <th>2970.28</th>
+                </tr>      
+             <tbody>
+                <tr>
+                    <td>กันเกรา</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>2</td>
+                    <th>155.67</th>
+                    <th>569.75</th>
+                </tr>      
+             <tbody>
+                <tr>
+                    <td>ยางนา</td>
+                    <td>ป่าดิบแล้ง</td>
+                    <td>1</td>
+                    <th>749.33</th>
+                    <th>2742.54</th>
+                </tr>      
+             <tbody>
+                <tr>
+                    <td>ไทรย้อยใบแหลม</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>1</td>
+                    <th>21.7</th>
+                    <th>79.44</th>
+                </tr>             
+        </table>
+
+        <script>
+            function searchTable() {
+                const input = document.getElementById("searchInput");
+                const filter = input.value.toUpperCase();
+                const table = document.getElementById("dataTable");
+                const rows = table.getElementsByTagName("tr");
+
+                for (let i = 1; i < rows.length; i++) {
+                    const cells = rows[i].getElementsByTagName("td");
+                    let match = false;
+
+                for (let j = 0; j < cells.length; j++) {
+                    if (cells[j]) {
+                        const textValue = cells[j].textContent || cells[j].innerText;
+                        if (textValue.toUpperCase().indexOf(filter) > -1) {
+                            match = true;
+                            break;
+                        }
+                    }
+                }
+                rows[i].style.display = match ? "" : "none";
+            }
+        }
+    </script>
+</body>
+
+        <div class="navigation-links">
+            <a href="result4.html" class="prev-link">ย้อนกลับ: โซนที่ 4</a>
+            <a href="result6.html" class="next-link">หน้าถัดไป: โซนที่ 6</a>
+        </div>
+
+        <div class="back-link">
+            <a href="index.html">กลับไปหน้าหลัก</a>
+        </div>
+</body>
+</html>
