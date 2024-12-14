@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ผลลัพธ์การกักเก็บคาร์บอน</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .navigation-links {
+            text-align: center; /* จัดให้อยู่ตรงกลาง */
+            margin-top: 20px;
+        }
+
+        .navigation-links a {
+            display: inline-block; /* ทำให้ลิงก์เรียงแนวนอน */
+            color: #007bff;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 8px 15px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            margin: 0 10px; /* เพิ่มระยะห่างระหว่างลิงก์ */
+        }
+
+        .navigation-links a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-link a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ผลลัพธ์การกักเก็บคาร์บอน</h1>
+    </header>
+    <div class="container">
+    <div class="container">
+        <h2>โซนที่ 7: บริเวณพื้นที่สำหรับสูบบุหรี่</h2>
+        <h3>Searchable Table</h1>
+        <input type="text" id="searchInput" placeholder="Search in table..." onkeyup="searchTable()">
+
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>ชื่อต้นไม้ (ภาษาไทย)</th>
+                    <th>ประเภทต้นไม้</th>
+                    <th>จำนวนต้นไม้</th>
+                    <th>การกักเก็บคาร์บอน (ตันคาร์บอน/เฮกตาร์)</th>
+                    <th>การดูดซับ Co2 (ตันคาร์บอนไดออกไซด์)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ศรีตรัง</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>30</td>
+                    <th>673.19</th>
+                    <th>2463.89</th>
+                </tr>
+                <tr>
+             <tbody>
+                <tr>
+                    <td>ตะเคียน</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>20</td>
+                    <th>2846.77</th>
+                    <th>10419.19</th>
+                </tr>
+                <tr>
+             <tbody>
+                <tr>
+                    <td>หว้า</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>17</td>
+                    <th>2302.96</th>
+                    <th>8428.84</th>
+                </tr>                 
+                <tr>
+             <tbody>
+                <tr>
+                    <td>หางนกยูงฝรั่ง</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>12</td>
+                    <th>1391.18</th>
+                    <th>5091.72</th>
+                </tr>
+                <tr>
+             <tbody>
+                <tr>
+                    <td>อินทนิล</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>11</td>
+                    <th>476.03</th>
+                    <th>1742.25</th>
+                </tr>
+                <tr>
+             <tbody>
+                <tr>
+                    <td>จันทน์กะพ้อ</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>4</td>
+                    <th>256.84</th>
+                    <th>940.03</th>
+                </tr>
+             <tbody>
+                <tr>
+                    <td>ยางนา</td>
+                    <td>ป่าดิบแล้ง</td>
+                    <td>4</td>
+                    <th>539.97</th>
+                    <th>1976.27</th>
+                </tr>        
+               <tbody>
+                <tr>
+                    <td>ประดู่บ้าน</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>3</td>
+                    <th>918.35</th>
+                    <th>3361.17</th>
+                </tr>      
+             <tbody>
+                <tr>
+                    <td>จามจุรี</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>3</td>
+                    <th>572.53</th>
+                    <th>2095.47</th>
+                </tr>      
+             <tbody>
+                <tr>
+                    <td>ไทรย้อยใบแหลม</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>3</td>
+                    <th>1778.5</th>
+                    <th>6509.32</th>
+                </tr>      
+             <tbody>
+                <tr>
+                    <td>อโศก</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>2</td>
+                    <th>40.68</th>
+                    <th>148.9</th>
+                </tr>      
+             <tbody>
+                <tr>
+                    <td>ตะแบก</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>2</td>
+                    <th>29.54</th>
+                    <th>108.13</th>
+                </tr>      
+             <tbody>
+                <tr>
+                    <td>หูกวาง</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>2</td>
+                    <th>151.71</th>
+                    <th>555.24</th>
+                </tr>             
+                <tr>
+                    <td>จำปี</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>1</td>
+                    <th>107.88</th>
+                    <th>394.82</th>
+                </tr>      
+             <tbody>
+                <tr>
+                    <td>ตีนเป็ด</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>1</td>
+                    <th>56.49</th>
+                    <th>206.75</th>
+                </tr>      
+             <tbody>
+                <tr>
+                    <td>จิกเล</td>
+                    <td>ป่าชายเลน</td>
+                    <td>1</td>
+                    <th>16.95</th>
+                    <th>62.03</th>
+                </tr>            
+                <tr>
+                    <td>สักผา</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>1</td>
+                    <th>119.17</th>
+                    <th>436.15</th>
+                </tr>      
+             <tbody>
+                <tr>
+                    <td>ไทรย้อย</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>1</td>
+                    <th>1147.31</th>
+                    <th>4199.16</th>
+                </tr>           
+        </table>
+
+        <script>
+            function searchTable() {
+                const input = document.getElementById("searchInput");
+                const filter = input.value.toUpperCase();
+                const table = document.getElementById("dataTable");
+                const rows = table.getElementsByTagName("tr");
+
+                for (let i = 1; i < rows.length; i++) {
+                    const cells = rows[i].getElementsByTagName("td");
+                    let match = false;
+
+                for (let j = 0; j < cells.length; j++) {
+                    if (cells[j]) {
+                        const textValue = cells[j].textContent || cells[j].innerText;
+                        if (textValue.toUpperCase().indexOf(filter) > -1) {
+                            match = true;
+                            break;
+                        }
+                    }
+                }
+                rows[i].style.display = match ? "" : "none";
+            }
+        }
+    </script>
+</body>
+
+        <div class="navigation-links">
+            <a href="result6.html" class="prev-link">ย้อนกลับ: โซนที่ 6</a>
+            <a href="result8.html" class="next-link">หน้าถัดไป: โซนที่ 8</a>
+        </div>
+
+        <div class="back-link">
+            <a href="index.html">กลับไปหน้าหลัก</a>
+        </div>
+</body>
+</html>
