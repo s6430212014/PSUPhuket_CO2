@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ผลลัพธ์การกักเก็บคาร์บอน</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+        img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .back-link a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ผลลัพธ์การกักเก็บคาร์บอน</h1>
+    </header>
+    <div class="container">
+        <h2>โซนที่ 2: บริเวณสนามฟุตบอลและพื้นที่ตลาดนัด มอ.บ้านซ่าน</h2>
+        <h3>Searchable Table</h1>
+        <input type="text" id="searchInput" placeholder="Search in table..." onkeyup="searchTable()">
+
+        <table id="dataTable">
+            <thead>
+                <tbody>
+                <tr>
+                    <th>ชื่อต้นไม้ (ภาษาไทย)</th>
+                    <th>ประเภทต้นไม้</th>
+                    <th>จำนวนต้นไม้</th>
+                    <th>การกักเก็บคาร์บอน (ตันคาร์บอน/เฮกตาร์)</th>
+                    <th>การดูดซับ Co2 (ตันคาร์บอนไดออกไซด์)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ศรีตรัง</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>80</td>
+                    <th>2292.62</th>
+                    <th>8390.98</th>
+                </tr>
+                <tr>
+            <tbody>
+                <tr>
+                    <td>ยางนา</td>
+                    <td>ป่าดิบแล้ง</td>
+                    <td>5</td>
+                    <th>783.53</th>
+                    <th>2867.7</th>
+                </tr>
+                <tr>                    
+            <tbody>
+                <tr>
+                    <td>หางนกยูงฝรั่ง</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>3</td>
+                    <th>371.91</th>
+                    <th>1361.2</th>
+                </tr>
+                <tr>
+            <tbody>
+                <tr>
+                    <td>เหลืองอินเดีย</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>2</td>
+                    <th>31.26</th>
+                    <th>114.4</th>
+                </tr>
+                <tr>
+            <tbody>
+                <tr>
+                    <td>ประดู่แดง</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>1</td>
+                    <th>26.96</th>
+                    <th>98.68</th>
+                </tr>
+                <tr>
+            <tbody>
+                <tr>
+                    <td>เสลา</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>1</td>
+                    <th>114.18</th>
+                    <th>417.9</th>
+                </tr>
+                <tr>
+            <tbody>
+                <tr>
+                    <td>กระถินเทพา</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>1</td>
+                    <th>533.72</th>
+                    <th>1953.4</th>
+                </tr>
+                <tr>
+              <tbody>
+                <tr>
+                    <td>อินทนิล</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>1</td>
+                    <th>13.85</th>
+                    <th>50.69</th>
+                </tr>
+                <tr>
+             <tbody>
+                <tr>
+                    <td>ตะแบก</td>
+                    <td>ป่าเบญจพรรณ</td>
+                    <td>1</td>
+                    <th>19.65</th>
+                    <th>71.92</th>
+                </tr>
+                <tr>
+              <tbody>
+                <tr>
+                    <td>พิกุล</td>
+                    <td>ป่าดิบชื้น</td>
+                    <td>1</td>
+                    <th>110.11</th>
+                    <th>403.01</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <script>
+            function searchTable() {
+                const input = document.getElementById("searchInput");
+                const filter = input.value.toUpperCase();
+                const table = document.getElementById("dataTable");
+                const rows = table.getElementsByTagName("tr");
+
+                for (let i = 1; i < rows.length; i++) {
+                    const cells = rows[i].getElementsByTagName("td");
+                    let match = false;
+
+                for (let j = 0; j < cells.length; j++) {
+                    if (cells[j]) {
+                        const textValue = cells[j].textContent || cells[j].innerText;
+                        if (textValue.toUpperCase().indexOf(filter) > -1) {
+                            match = true;
+                            break;
+                        }
+                    }
+                }
+                rows[i].style.display = match ? "" : "none";
+            }
+        }
+    </script>
+</body>
+</html>
+
+       <div class="back-link">
+            <a href="result.html">ย้อนกลับ: โซนที่ 1</a>
+        </div>
+    </div>
+</body>
+</html>
